@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="sv">
 	<head>
 		<title>Martin Jakobsson</title>
 		<meta charset="utf-8" />
@@ -140,27 +140,29 @@
 									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 								<p>Det går självklart även bra att mejla mig på <a href="mailto:info@martinjakobsson.nu">info@martinjakobsson.nu</a></p>
-								<form method="post" action="#">
+
+
+								<form method="POST" action="http://formspree.io/info@martinjakobsson.nu">
 									<div class="field first">
-										<label for="name">Namn</label>
-										<input type="text" name="name" placeholder="Namn och Efternamn"/>
+										<label for="Namn">Namn</label>
+										<input type="text" name="Namn" placeholder="Namn och Efternamn"/>
 									</div>
 									<div class="field first">
-										<label for="name">E-post</label>
-										<input type="text" name="name" placeholder="epost@exempel.se"/>
+										<label for="E-post">E-post</label>
+										<input type="email" name="E-post" placeholder="epost@exempel.se"/>
 									</div>
 									<div class="field half first">
-										<label for="name">Ålder</label>
-										<input type="text" name="name"/>
+										<label for="Ålder">Ålder</label>
+										<input type="text" name="Ålder"/>
 									</div>
 									<div class="field half">
-										<label for="name">Vikt</label>
-										<input type="text" name="name" placeholder="Din nuvarande vikt i kg"/>
+										<label for="Vikt">Vikt</label>
+										<input type="text" name="Vikt" placeholder="Din nuvarande vikt i kg"/>
 									</div>
 									<div class="field half first">
-											<label for="civilstatus">Civilstatus</label>
+											<label for="Civilstatus">Civilstatus</label>
 											<div class="select-wrapper">
-												<select class="" name="civilstatus">
+												<select class="" name="Civilstatus">
 													<option value="Gift">Gift</option>
 													<option value="Förlovad">Förlovad</option>
 													<option value="Sambo">Sambo</option>
@@ -170,42 +172,42 @@
 											</div>
 									</div>
 									<div class="field half">
-										<label for="tjanst">Typ av tjänst</label>
+										<label for="Tjänst">Typ av tjänst</label>
 										<div class="select-wrapper">
-										<select class="" name="tjanst">
+										<select class="" name="Tjänst">
 											<option value="PTOnline">PT/Online</option>
 											<option value="PTKost">PT/Kost</option>
 										</select>
 									</div>
 									</div>
 									<div class="field first">
-										<label for="epost">Antal Träningspass per vecka</label>
-										<input type="text" name="epost" value="">
+										<label for="Antal pass per vecka">Antal Träningspass per vecka</label>
+										<input type="text" name="Antal pass per vecka" value="">
 									</div>
 									<div class="field first">
-										<label for="epost">Vilka dagar/tider kan du träna?</label>
-										<input type="text" name="epost" value="">
+										<label for="Dagar och Tider">Vilka dagar/tider kan du träna?</label>
+										<input type="text" name="Dagar och Tider" value="">
 									</div>
 									<div class="field first">
-										<label for="epost">Hobby/Intressen</label>
-										<textarea name="name" rows="4" cols="80"></textarea>
+										<label for="Hobby/Intresse">Hobby/Intressen</label>
+										<textarea name="Hobby/Intresse" rows="4" cols="80"></textarea>
 									</div>
 									<div class="field first">
-										<label for="epost">Sömn/Stress</label>
-										<textarea name="name" rows="4" cols="80"></textarea>
+										<label for="Sömn/Stress">Sömn/Stress</label>
+										<textarea name="Sömn/Stress" rows="4" cols="80"></textarea>
 									</div>
 									<div class="field first">
-										<label for="epost">Hälsobakgrund</label>
+										<label for="Hälsobakgrund">Hälsobakgrund</label>
 										<ul>
 											<legend>Viktiga saker att ta med:</legend>
 											<li>Allergier</li>
 											<li>Mediciner</li>
 											<li>Eventuella skador</li>
 										</ul>
-										<textarea name="name" rows="8" cols="80"></textarea>
+										<textarea name="Hälsobakgrund" rows="8" cols="80"></textarea>
 									</div>
 									<div class="field first">
-										<label for="epost">Kostvanor</label>
+										<label for="Kostvanor">Kostvanor</label>
 										<ul>
 											<li>Skräpmat (hur ofta och hur mycket)</li>
 											<li>Alkohol (hur ofta och hur mycket)</li>
@@ -213,12 +215,12 @@
 											<li>Dina mål och inom vilken tidsram</li>
 											<li>Hur du äter under en vanlig dag (tider och mängd)</li>
 										</ul>
-										<textarea name="name" rows="8" cols="80"></textarea>
+										<textarea name="Kostvanor" rows="8" cols="80"></textarea>
 									</div>
 									<div class="field half first">
-											<label for="">Uppskatta din nuvarande Form [1-10]</label>
+											<label for="Nuvarande Form">Uppskatta din nuvarande Form [1-10]</label>
 											<div class="select-wrapper">
-												<select class="" name="civilstatus">
+												<select class="" name="Nuvarande Form">
 													<option value="1">1</option>
 													<option value="2">2</option>
 													<option value="3">3</option>
@@ -233,9 +235,9 @@
 											</div>
 									</div>
 									<div class="field half">
-										<label for="">Hur gärna du vill nå dina mål [1-10]</label>
+										<label for="Motivation">Hur gärna du vill nå dina mål [1-10]</label>
 										<div class="select-wrapper">
-											<select class="" name="civilstatus">
+											<select class="" name="Motivation">
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>
@@ -249,9 +251,11 @@
 											</select>
 										</div>
 									</div>
-									<ul class="actions">
+									<!-- <ul class="actions">
 										<li><input type="submit" value="Skicka" class="special" /></li>
-									</ul>
+									</ul> -->
+									<input type="text" name="_gotcha" style="display:none" />
+									<button type="submit" class="button special">Skicka</button>
 								</form>
 							</article>
 					</div>
@@ -274,7 +278,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 		<!-- endbuild -->
-
 			<!--
 				Dimension by HTML5 UP
 				html5up.net | @ajlkn
