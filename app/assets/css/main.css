@@ -1591,3 +1591,11 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+		.sponsors {
+			text-align: center;
+			padding-bottom: 25px;
+		}
+		.sponsors > img{
+			max-width: 325px;
+			vertical-align: middle;
+		}
