@@ -1592,10 +1592,18 @@
 			opacity: 0;
 		}
 		.sponsors {
+			float: left;
 			text-align: center;
 			padding-bottom: 25px;
 		}
 		.sponsors > img{
-			max-width: 325px;
-			vertical-align: middle;
+			float: left;
+			max-width: 50%;
+			padding: 20px;
+		}
+		@media screen and (max-width: 736px) {
+			.sponsors > img {
+				float: none;
+				max-width: 100%
+			}
 		}
